@@ -20,7 +20,7 @@ export type SiteConfig = {
      * @deprecated
      * @see `$lib/components/index_profile.svelte`
      */
-    avatar?: never
+    avatar?: string
     status?: string
     bio?: string
     metadata?: (
