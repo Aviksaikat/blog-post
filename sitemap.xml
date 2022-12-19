@@ -11,18 +11,18 @@
     </url>
     
         <url>
+            <loc>https://urara-demo.netlify.app/hello-world</loc>
+            <lastmod>2022-12-19T00:00:00.000Z</lastmod>
+            <priority>0.5</priority>
+        </url>
+        <url>
             <loc>https://urara-demo.netlify.app/hello-world/elements</loc>
-            <lastmod>2022-12-19T12:55:16.135Z</lastmod>
+            <lastmod>2022-12-19T14:11:38.535Z</lastmod>
             <priority>0.5</priority>
         </url>
         <url>
             <loc>https://urara-demo.netlify.app/hello-world/toc-disabled</loc>
-            <lastmod>2022-12-19T12:55:16.135Z</lastmod>
-            <priority>0.5</priority>
-        </url>
-        <url>
-            <loc>https://urara-demo.netlify.app/hello-world</loc>
-            <lastmod>2021-12-12T00:00:00.000Z</lastmod>
+            <lastmod>2022-12-19T14:11:38.535Z</lastmod>
             <priority>0.5</priority>
         </url>
   </urlset>
