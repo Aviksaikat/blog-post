@@ -60,8 +60,8 @@ export const header: HeaderConfig = {
 			link: '/Welcome Web3'
 		},
 		{
-			text: 'Elements',
-			link: ''
+			text: 'Yogosha Christmans CTF 21',
+			link: '/Yogosha Christmans CTF 21'
 		}
 	]
 }
