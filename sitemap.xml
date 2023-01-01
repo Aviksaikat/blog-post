@@ -16,13 +16,23 @@
             <priority>0.5</priority>
         </url>
         <url>
-            <loc>https://urara-demo.netlify.app/Welcome Web3/elements</loc>
-            <lastmod>2022-12-20T19:16:43.316Z</lastmod>
+            <loc>https://urara-demo.netlify.app/Yogosha Christmans CTF 21</loc>
+            <lastmod>2021-12-29T00:00:00.000Z</lastmod>
+            <priority>0.5</priority>
+        </url>
+        <url>
+            <loc>https://urara-demo.netlify.app/Yogosha Christmans CTF 21/Welcome Christmas</loc>
+            <lastmod>2021-12-29T00:00:00.000Z</lastmod>
+            <priority>0.5</priority>
+        </url>
+        <url>
+            <loc>https://urara-demo.netlify.app/Yogosha Christmans CTF 21/Uchiha Or Evil</loc>
+            <lastmod>2021-12-19T00:00:00.000Z</lastmod>
             <priority>0.5</priority>
         </url>
         <url>
             <loc>https://urara-demo.netlify.app/Welcome Web3/toc-disabled</loc>
-            <lastmod>2022-12-20T19:16:43.316Z</lastmod>
+            <lastmod>2023-01-01T11:34:18.466Z</lastmod>
             <priority>0.5</priority>
         </url>
   </urlset>
