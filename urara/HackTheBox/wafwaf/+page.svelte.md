@@ -1,5 +1,6 @@
 ---
 title: HackTheBox Challenge - Web - wafwaf
+image: '/assets/wafwaf.png'
 created: 2021-08-21
 tags:
   - 'ctf'
