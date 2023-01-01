@@ -1,7 +1,7 @@
 <script lang="ts">
   import { site } from '$lib/config/site'
-  import { src, width, height } from '/static/assets/maskable@512.png?width=384&format=webp&metadata'
-  import srcset from '/static/assets/maskable@512.png?w=48;96;192&avif&srcset'
+  import { src, width, height } from '/src/assets/maskable@512.png?width=384&format=webp&metadata'
+  import srcset from '/src/assets/maskable@512.png?w=48;96;192&avif&srcset'
 </script>
 
 <div

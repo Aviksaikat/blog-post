@@ -19,21 +19,21 @@ I heard something important is stored in /secret.txt here: http://3.141.159.106 
 ```
 
 - From the previous challenge we got a url. Let's visit the page.
-![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%253F_DONE/images/1.png)
+![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%3F_DONE/images/1.png)
 
 - Nothing much on this page. I ran `nikto` & got there is a `robots.txt` file here. We can check the robots.txt page & there's some interesting info. So there is page.Let's go to `read.php`
-![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%253F_DONE/images/2.png)
-![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%253F_DONE/images/3.png)
+![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%3F_DONE/images/2.png)
+![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%3F_DONE/images/3.png)
 - We got access denied. There is an interesting line in the robots.txt file which is `User-agent: Uchiha`. Let's change our useragent to `Uchiha`. You can use burp or a user agent changer extension. And we have something here.
-![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%253F_DONE/images/4.png)
+![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%3F_DONE/images/4.png)
 - Let's view the source. We have 2 things here.
     1. The form is sending post data with some hash concatenated a filename
     2. Some dev notes(comments)
 
-![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%253F_DONE/images/5.png)
+![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%3F_DONE/images/5.png)
 
 - If we send the form we can see some odd thing happening here. Looks like the source code of the `read.php` page is loading. So form the dev comment we can see we have to read the source here in-order to continue from here.
-![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%253F_DONE/images/6.png)
+![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%3F_DONE/images/6.png)
 - Let's save the source in a file & read the code.
 
 ```php
@@ -87,7 +87,7 @@ done
 
 - This script will generate a file called `hashes` concatenating the hashes. Then we can use burpsuite or python to send the hash & check the result.
 - The correct length is `42`. And we can see the result here we have the source of `guinjutsu.php`
-![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%253F_DONE/images/7.png)
+![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%3F_DONE/images/7.png)
 - So we have another source code let's see this one in more details
 
 ```php
@@ -129,11 +129,11 @@ echo $file;
 - In short the `check` function is checking for the a url which looks like this `http://uchiha.fuinjutsukeeper.tech:5000/`. If the check passes then it'll concat the endpoint with the url & give the output of whatever we're supplying. So how can we exploit this we have to load something which is on the `http://uchiha.fuinjutsukeeper.tech:5000/` & we can't load anything else or can we...
 - It took me an another day (:-\` yah I'm slow). Php is weird we all know.. This part `strpos($par['scheme'],'http')!==false)` only checks for if the `http` part is supplied in the url or not; i.e. `http`, `https`, `phttp`, `fhttp`, `httpf` etc will return true. Nice we can do something nasty here.
 - If we send the payload as it is we'll get something like this. Because we have to load files from the machine i.e. `LFI`.
-![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%253F_DONE/images/8.png)
+![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%3F_DONE/images/8.png)
 
 - We can bypass this by using this paylaod
 `submit=1&api=phttp://uchiha.fuinjutsukeeper.tech:5000/&endpoint=../../../../../../../../../../etc/passwd`
-![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%253F_DONE/images/9.png)
+![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%3F_DONE/images/9.png)
 - See we still got the error but we also got the contents of `/etc/passwd`. This is because this part.
 
 ```php
@@ -144,7 +144,7 @@ echo $file;
 
 - This is because `phttp` is not a valid scheme and thus `file_get_contents` thinks it's just part of the filepath while `parse_url` thinks its just a weird scheme unknown to it, but with a valid host and port!. You can read more in this [writeup](https://deltaclock.gitbook.io/ctf-writeups/securinets-ctf-quals-2021-mixed). Always count on smart people.
 - And with this payload `submit=1&api=phttp://uchiha.fuinjutsukeeper.tech:5000/&endpoint=../../../../../../../../../../secret.txt` we have the flag
-![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%253F_DONE/images/10.png)
+![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%3F_DONE/images/10.png)
 
 - Originally when I was solving this I don't know why burp was not showing any output here so I had the answer but wasted a lot of time. Then a friend of mine told me to use python. I was like why I haven't tried that lol (For the 100th time I'm saying count on smart people to avoid struggles like me) :-). Anyways here is the python script if anyone is interested.
 
@@ -167,7 +167,7 @@ print(findall("Yogosha{.*", r.text)[0])
 
 - Same thing we're sending the data as json format this time & everything else is same & I'm [regular expressions](https://en.wikipedia.org/wiki/Regular_expression) to extract the flag part only.
 - `Yogosha{.*` means first get `Yogosha{`(flag format) then `.` means any character & finally `*` means any number of times( 0 or > 0) & then we're indexing the first item of the array(list for python)
-![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%253F_DONE/images/11.png)
+![](https://gitlab.com/Aviksaikat/yogoshactf-2021/-/raw/main/Uchiha_Or_Evil_%3F_DONE/images/11.png)
 
 #### Thank you for reading this write-up I hope it helped you. I was only able to solve only the first 2 challenges so that's all from me. I hope you learned something. I'll try to add links of other people whole solved the entire thing
 
