@@ -22,3 +22,6 @@ src/routes/**/+page.svelte.md
 src/routes/**/+page.md
 *.config.js
 urara.js
+
+# editor
+.vscode/*

@@ -3,11 +3,11 @@ title: 'Ethernaut Fallback'
 image: 'https://ethernaut.openzeppelin.com/imgs/BigLevel1.svg'
 created: 2022-12-19
 updated: 2022-12-19
-tag:
-    - smart contracts
-    - web3
-    - brownie
-    - ethernaut
+tags:
+    - 'smart contracts'
+    - 'web3'
+    - 'brownie'
+    - 'ethernaut'
 ---
 
 
