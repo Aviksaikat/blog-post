@@ -1,7 +1,7 @@
 ---
 title: 'Ethernaut Fallback'
 image: 'https://ethernaut.openzeppelin.com/imgs/BigLevel1.svg'
-created: 2022-12-19
+created: 2022-08-17
 updated: 2022-12-19
 tags:
     - 'smart contracts'
