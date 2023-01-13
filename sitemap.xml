@@ -11,12 +11,12 @@
     </url>
     
         <url>
-            <loc>https://urara-demo.netlify.app/Ethernaut/Fallback</loc>
+            <loc>https://urara-demo.netlify.app/Welcome Web3</loc>
             <lastmod>2022-12-19T00:00:00.000Z</lastmod>
             <priority>0.5</priority>
         </url>
         <url>
-            <loc>https://urara-demo.netlify.app/Welcome Web3</loc>
+            <loc>https://urara-demo.netlify.app/Ethernaut/Fallback</loc>
             <lastmod>2022-12-19T00:00:00.000Z</lastmod>
             <priority>0.5</priority>
         </url>
@@ -37,17 +37,17 @@
         </url>
         <url>
             <loc>https://urara-demo.netlify.app/Welcome Web3/toc-disabled</loc>
-            <lastmod>2023-01-13T20:03:17.945Z</lastmod>
+            <lastmod>2023-01-13T20:04:36.627Z</lastmod>
             <priority>0.5</priority>
         </url>
         <url>
             <loc>https://urara-demo.netlify.app/SQL Injection Using Threading</loc>
-            <lastmod>2023-01-13T20:03:17.945Z</lastmod>
+            <lastmod>2023-01-13T20:04:36.627Z</lastmod>
             <priority>0.5</priority>
         </url>
         <url>
             <loc>https://urara-demo.netlify.app/HackTheBox/wafwaf</loc>
-            <lastmod>2023-01-13T20:03:17.945Z</lastmod>
+            <lastmod>2023-01-13T20:04:36.627Z</lastmod>
             <priority>0.5</priority>
         </url>
   </urlset>
