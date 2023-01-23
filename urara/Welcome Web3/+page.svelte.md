@@ -6,6 +6,8 @@ updated: 2022-12-19
 tags:
   - 'ctf'
   - 'web3'
+  - 'smart contracts'
+  - 'brownie'
   - 'nahamcon EU ctf 22'
 ---
 
