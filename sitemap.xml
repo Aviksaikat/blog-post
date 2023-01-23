@@ -37,17 +37,27 @@
         </url>
         <url>
             <loc>https://urara-demo.netlify.app/Welcome Web3/toc-disabled</loc>
-            <lastmod>2023-01-13T20:04:36.627Z</lastmod>
+            <lastmod>2023-01-23T19:48:11.911Z</lastmod>
+            <priority>0.5</priority>
+        </url>
+        <url>
+            <loc>https://urara-demo.netlify.app/GitLab11.4.7-RCE</loc>
+            <lastmod>2022-12-19T00:00:00.000Z</lastmod>
             <priority>0.5</priority>
         </url>
         <url>
             <loc>https://urara-demo.netlify.app/SQL Injection Using Threading</loc>
-            <lastmod>2023-01-13T20:04:36.627Z</lastmod>
+            <lastmod>2023-01-23T19:48:11.911Z</lastmod>
             <priority>0.5</priority>
         </url>
         <url>
             <loc>https://urara-demo.netlify.app/HackTheBox/wafwaf</loc>
-            <lastmod>2023-01-13T20:04:36.627Z</lastmod>
+            <lastmod>2023-01-23T19:48:11.911Z</lastmod>
+            <priority>0.5</priority>
+        </url>
+        <url>
+            <loc>https://urara-demo.netlify.app/TryHackme/Vulnversity</loc>
+            <lastmod>2022-12-19T00:00:00.000Z</lastmod>
             <priority>0.5</priority>
         </url>
   </urlset>

