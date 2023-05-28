@@ -1,7 +1,7 @@
 ---
 title: Predictable NFT - Quillctf
 image: 'https://quillctf.super.site/_next/image?url=https%3A%2F%2Fassets.super.so%2Fa799195c-7c08-410a-9254-50dd9f21a772%2Fimages%2F6e1d60ba-8a0b-4588-9413-fb30d1dfee82%2F1374FC4A-D8B8-4767-B951-ED874164BB64.png&w=1920&q=80'
-created: 2023-05-12
+created: 2023-04-18
 tags:
     - 'smart contracts'
     - 'web3'
